@@ -45,7 +45,7 @@ layers:
   - X
   - C
   - V
-  - B
+  - A
   - '&mmv MOVE_X(100)'
   - N
   - M
