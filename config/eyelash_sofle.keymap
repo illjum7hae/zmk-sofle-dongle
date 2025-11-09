@@ -4,6 +4,7 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -66,8 +67,8 @@
         layer_1 {
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5               &mmv MOVE_UP       &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &kp C_VOLUME_UP      &mmv MOVE_DOWN     &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &kp C_VOLUME_DOWN    &mmv MOVE_X(-100)  &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&bl BL_INC  &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &kp C_VOLUME_UP      &mmv MOVE_DOWN     &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
+&bl BL_TOG  &kp TILDE        &trans          &trans           &trans           &kp C_VOLUME_DOWN    &mmv MOVE_X(-100)  &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI      &mmv MOVE_X(100)   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans               &mkp LCLK          &trans           &trans           &trans      &trans     &trans
             >;
