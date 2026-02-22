@@ -295,7 +295,7 @@ layers:
   - G
   - {t: '$$mdi:transfer$$', type: trans}
   - H
-  - J
+  - $$mdi:mouse-left-click-outline$$
   - K
   - L
   - {t: ;, s: ':'}
